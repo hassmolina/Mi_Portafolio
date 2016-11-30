@@ -44,14 +44,15 @@ function scroll() {
     $("body").css("overflow-y", "scroll");
 
 	} else if ( tam  > 480 && tam < 1020) {
-    $("body").css("overflow-y", "scroll");
+
     $("body").css("overflow", "");
 
     $("html").css("overflow", "");
+		  $("body").css("overflow-y", "scroll");
   } else {
     $("body").css("overflow", "hidden");
     $("body").css("overflow-y", "");
-
+    $("html").css("overflow", "hidden");
     $("html").css("overflow-y", "");
 	}
 }
