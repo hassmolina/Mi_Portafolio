@@ -29,7 +29,11 @@ function resize() {
 		$(".desktop").show();
 	}
 
-  setTimeout(scroll, 500);
+
+	var altura = $('body').height() + 'px';
+	console.log(altura);
+
+  
 
 }
 
